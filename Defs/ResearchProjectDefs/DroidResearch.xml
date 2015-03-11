@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ResearchProjectDefs>
+
+  <ResearchProjectDef>
+    <defName>MD2Droids</defName>
+    <label>MD2 Droids</label>
+    <description>
+Unlocks the Droid Assembly. This is a workbench which is where all your droids will be constructed. Initially it will not have any recipes available - these are unlocked through further research options
+    </description>
+    <totalCost>550</totalCost>
+    <prerequisites>
+      <li>MD2UtilitiesI</li>
+      <li>MD2DefenceI</li>
+      <li>MD2OffenceI</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>MD2DroidCharger</defName>
+    <label>MD2 Droid Charge Pad</label>
+    <description>
+      --REQUIRED BEFORE YOU CAN RESEARCH DROIDS--
+      
+          Unlocks building the Droid Charging Pad, which will charge droids standing on it. Unlocks research options for droids.
+    </description>
+    <totalCost>250</totalCost>
+    <prerequisites>
+      <li>MD2Droids</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>MD2WorkerDroid</defName>
+    <label>MD2 Worker Droid</label>
+    <description>
+      Unlocks the worker droid to be available for construction at the Droid Assembly. This droid cleans your base and hauls things around.
+    </description>
+    <totalCost>200</totalCost>
+    <prerequisites>
+      <li>MD2DroidCharger</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>MD2MiningDroid</defName>
+    <label>MD2 Mining Droid</label>
+    <description>
+      Unlocks the mining droid to be available for construction at the Droid Assembly. This droid is capable of quickly mining through stone.
+    </description>
+    <totalCost>200</totalCost>
+    <prerequisites>
+      <li>MD2DroidCharger</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>MD2GrowerDroid</defName>
+    <label>MD2 Grower Droid</label>
+    <description>
+      Unlocks the grower droid to be available for construction at the Droid Assembly. This droid is capable of quickly planting and harvesting plants.
+    </description>
+    <totalCost>200</totalCost>
+    <prerequisites>
+      <li>MD2DroidCharger</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>MD2MedicDroid</defName>
+    <label>MD2 Medic Droid</label>
+    <description>
+      Unlocks the medic droid to be available for construction at the Droid Assembly. This droid is proficient at treating patients.
+    </description>
+    <totalCost>200</totalCost>
+    <prerequisites>
+      <li>MD2DroidCharger</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>MD2BuilderDroid</defName>
+    <label>MD2 Builder Droid</label>
+    <description>
+      Unlocks the builder droid to be available for construction at the Droid Assembly. This droid is proficient at constructing buildings.
+    </description>
+    <totalCost>200</totalCost>
+    <prerequisites>
+      <li>MD2DroidCharger</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>MD2CraftingDroid</defName>
+    <label>MD2 Crafting Droid</label>
+    <description>
+      Unlocks the crafting droid to be available for construction at the Droid Assembly. This droid is proficient at crafting.
+    </description>
+    <totalCost>200</totalCost>
+    <prerequisites>
+      <li>MD2DroidCharger</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>MD2CookingDroid</defName>
+    <label>MD2 Cooking Droid</label>
+    <description>
+      Unlocks the cooking droid to be available for construction at the Droid Assembly. This droid is an excellent chef.
+    </description>
+    <totalCost>200</totalCost>
+    <prerequisites>
+      <li>MD2DroidCharger</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>MD2BasicCombatDroid</defName>
+    <label>MD2 Basic Combat Droid</label>
+    <description>
+      Unlocks the basic combat droid to be available for construction at the Droid Assembly. This droid is the first succesful combat droid to be manufactured, being that it did not attempt to kill your colonists upon completion.
+    </description>
+    <totalCost>200</totalCost>
+    <prerequisites>
+      <li>MD2DroidCharger</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>MD2CrematoriusDroid</defName>
+    <label>MD2 Crematorius</label>
+    <description>
+      Unlocks the crematorius to be available for construction at the Droid Assembly. This droid is a hulking construct which roams the battlefield after the fight and devours corpses. It can be set to strip or not strip bodies.
+    </description>
+    <totalCost>500</totalCost>
+    <prerequisites>
+      <li>MD2DroidCharger</li>
+      <li>Cremation</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+</ResearchProjectDefs>

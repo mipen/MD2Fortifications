@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase" Name="WallBase" Abstract="True">
+    <defName>Wall</defName>
+    <eType>Wall</eType>
+    <label>wall</label>
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <description>An impassable wall. Capable of holding up a roof.</description>
+    <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+    <blueprintGraphicPath>Things/Building/Linked/Wall_Blueprint_Atlas</blueprintGraphicPath>
+    <statBases>
+      <MaxHealth>300</MaxHealth>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costStuffCount>6</costStuffCount>
+    <altitudeLayer>BuildingTall</altitudeLayer>
+    <passability>Impassable</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <holdsRoof>false</holdsRoof>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <building>
+      <ignoreNeedsPower>true</ignoreNeedsPower>
+    </building>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>3</multiplier>
+      </li>
+    </damageMultipliers>
+    <linkDrawerType>CornerFiller</linkDrawerType>
+    <linkFlags>
+      <li>Wall</li>
+      <li>Rock</li>
+    </linkFlags>
+  </ThingDef>
+
+  <ThingDef ParentName="WallBase">
+    <defName>MD2MechEmbrasure</defName>
+    <eType>Wall</eType>
+    <label>mechanical embrasure</label>
+    <thingClass>MD2.Building_MechWallEmbrasure</thingClass>
+    <description>A mechanical wall which has been opened to act as an embrasure.</description>
+    <fillPercent>0.99</fillPercent>
+    <uiIconPath>UI/Icons/Metal</uiIconPath>
+    <graphicPath>Buildings/Embrasure/Embrasure</graphicPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <Comps>
+      <li>
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>15</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+    </Comps>
+  </ThingDef>
+
+</ThingDefs>
