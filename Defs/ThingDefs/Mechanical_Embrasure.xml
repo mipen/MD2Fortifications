@@ -60,7 +60,6 @@
 
   <ThingDef ParentName="WallBase">
     <defName>MD2MechEmbrasure</defName>
-    <eType>Wall</eType>
     <label>mechanical embrasure</label>
     <thingClass>MD2.Building_MechWallEmbrasure</thingClass>
     <description>A mechanical wall which has been opened to act as an embrasure.</description>

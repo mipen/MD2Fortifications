@@ -78,7 +78,6 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>MechWallRecessed</defName>
-    <eType>BuildingInert</eType>
     <label>Recessed Mechanical Wall</label>
     <thingClass>MD2.Building_MechWallRecessed</thingClass>
     <category>Building</category>
