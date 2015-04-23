@@ -13,7 +13,6 @@
 
   <ThingDef ParentName="BuildingBase" Name="WallBase" Abstract="True">
     <defName>Wall</defName>
-    <eType>Wall</eType>
     <label>wall</label>
     <category>Building</category>
     <thingClass>Building</thingClass>
@@ -21,7 +20,7 @@
     <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
     <blueprintGraphicPath>Things/Building/Linked/Wall_Blueprint_Atlas</blueprintGraphicPath>
     <statBases>
-      <MaxHealth>300</MaxHealth>
+      <MaxHitPoints>300</MaxHitPoints>
       <Flammability>0</Flammability>
     </statBases>
     <costStuffCount>6</costStuffCount>

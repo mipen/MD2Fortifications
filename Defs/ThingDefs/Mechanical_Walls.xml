@@ -14,7 +14,6 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>MechWallExtended</defName>
-    <eType>Wall</eType>
     <label>Extended Mechanical Wall</label>
     <thingClass>MD2.Building_MechWallExtended</thingClass>
     <category>Building</category>
@@ -24,7 +23,7 @@
     <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
     <blueprintgraphicPath>Things/Building/Linked/Wall_Blueprint_Atlas</blueprintgraphicPath>
     <statBases>
-      <MaxHealth>300</MaxHealth>
+      <MaxHitPoints>300</MaxHitPoints>
       <WorkToMake>1000</WorkToMake>
       <Flammability>1.0</Flammability>
     </statBases>
@@ -89,7 +88,7 @@
     <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
     <blueprintgraphicPath>Things/Building/Linked/Wall_Blueprint_Atlas</blueprintgraphicPath>
     <statBases>
-      <MaxHealth>300</MaxHealth>
+      <MaxHitPoints>300</MaxHitPoints>
       <Flammability>0</Flammability>
     </statBases>
     <combatTargetBuilding>false</combatTargetBuilding>
