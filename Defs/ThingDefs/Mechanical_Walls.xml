@@ -18,10 +18,19 @@
     <thingClass>MD2.Building_MechWallExtended</thingClass>
     <category>Building</category>
     <description>An impassable mechanised wall.</description>
-    <graphicPath>Things/Building/Linked/Wall</graphicPath>
-    <graphicClass>Graphic_Appearances</graphicClass>
+    <graphicData>
+      <texPath>Things/Building/Linked/Wall</texPath>
+      <graphicClass>Graphic_Appearances</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+    </graphicData>
+    <blueprintGraphicData>
+      <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+    </blueprintGraphicData>
     <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
-    <blueprintgraphicPath>Things/Building/Linked/Wall_Blueprint_Atlas</blueprintgraphicPath>
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
       <WorkToMake>1000</WorkToMake>
@@ -67,13 +76,7 @@
         <multiplier>3</multiplier>
       </li>
     </damageMultipliers>
-    <linkDrawerType>CornerFiller</linkDrawerType>
-    <linkFlags>
-      <li>Wall</li>
-      <li>Rock</li>
-    </linkFlags>
     <researchPrerequisite>MD2MechanisedWalls</researchPrerequisite>
-
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -82,10 +85,16 @@
     <thingClass>MD2.Building_MechWallRecessed</thingClass>
     <category>Building</category>
     <description>A mechanised wall that has been recessed into the floor.</description>
-    <graphicPath>Buildings/MechWall/MechWall_Recessed</graphicPath>
-    <graphicClass>Graphic_Single</graphicClass>
+    <graphicData>
+      <texPath>Buildings/MechWall/MechWall_Recessed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+    </graphicData>
     <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
-    <blueprintgraphicPath>Things/Building/Linked/Wall_Blueprint_Atlas</blueprintgraphicPath>
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -98,6 +107,7 @@
       <li>Woody</li>
       <li>Stony</li>
     </stuffCategories>
+        <costStuffCount>50</costStuffCount>
     <castEdgeShadows>false</castEdgeShadows>
     <menuHidden>true</menuHidden>
     <fillPercent>0.1</fillPercent>
@@ -111,7 +121,7 @@
     <holdsRoof>false</holdsRoof>
     <staticSunShadowHeight>0</staticSunShadowHeight>
     <blockLight>false</blockLight>
-    <itemSurface>false</itemSurface>
+    <surfaceType>Item</surfaceType>
     <building>
       <ignoreNeedsPower>true</ignoreNeedsPower>
     </building>
@@ -122,11 +132,6 @@
         <transmitsPower>true</transmitsPower>
       </li>
     </Comps>
-    <linkDrawerType>CornerFiller</linkDrawerType>
-    <linkFlags>
-      <li>Wall</li>
-      <li>Rock</li>
-    </linkFlags>
   </ThingDef>
 
 </Buildings>

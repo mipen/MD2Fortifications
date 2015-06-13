@@ -12,18 +12,13 @@
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase" Name="WallBase" Abstract="True">
-    <defName>Wall</defName>
-    <label>wall</label>
     <category>Building</category>
-    <thingClass>Building</thingClass>
-    <description>An impassable wall. Capable of holding up a roof.</description>
     <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
-    <blueprintGraphicPath>Things/Building/Linked/Wall_Blueprint_Atlas</blueprintGraphicPath>
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
       <Flammability>0</Flammability>
     </statBases>
-    <costStuffCount>6</costStuffCount>
+    <costStuffCount>50</costStuffCount>
     <altitudeLayer>BuildingTall</altitudeLayer>
     <passability>Impassable</passability>
     <castEdgeShadows>true</castEdgeShadows>
@@ -51,11 +46,6 @@
         <multiplier>3</multiplier>
       </li>
     </damageMultipliers>
-    <linkDrawerType>CornerFiller</linkDrawerType>
-    <linkFlags>
-      <li>Wall</li>
-      <li>Rock</li>
-    </linkFlags>
   </ThingDef>
 
   <ThingDef ParentName="WallBase">
@@ -65,8 +55,15 @@
     <description>A mechanical wall which has been opened to act as an embrasure.</description>
     <fillPercent>0.99</fillPercent>
     <uiIconPath>UI/Icons/Metal</uiIconPath>
-    <graphicPath>Buildings/Embrasure/Embrasure</graphicPath>
-    <graphicClass>Graphic_Single</graphicClass>
+    <graphicData>
+      <texPath>Buildings/Embrasure/Embrasure</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+    </graphicData>
     <Comps>
       <li>
         <compClass>CompPowerTrader</compClass>
