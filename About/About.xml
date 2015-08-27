@@ -3,7 +3,6 @@
   <name>MD2 Fortifications</name>
   <author>mipen</author>
   <url>https://ludeon.com/forums/index.php?topic=7380.0</url>
-  <targetVersion>Alpha 11b</targetVersion>
-  <description>Mechanical Defence 2 fortifications module.
-  Recompiled by Leucetius for Alpha 11b</description>
+  <targetVersion>Alpha 12</targetVersion>
+  <description>Mechanical Defence 2 fortifications module</description>
 </ModMetaData>
